@@ -1,3 +1,6 @@
+# My partner never repled to my attempts at communication so I completed the parts I could
+# Partner 1: Suki Liu
+# Partner 2: Ramey Webb Webb
 import math
 def add(a, b):
     return a+b
