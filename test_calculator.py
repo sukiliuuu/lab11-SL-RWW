@@ -50,10 +50,10 @@ class TestCalculator(unittest.TestCase):
         assert hypotenuse(5, 12) == 13
 
     def test_sqrt(self):  # 3 assertions
-    with self.assertRaises(ValueError):
-        square_root(-1)
-    self.assertEqual(square_root(0), 0)
-    self.assertEqual(square_root(9), 3)
+        with self.assertRaises(ValueError):
+            square_root(-1)
+        self.assertEqual(square_root(0), 0)
+        self.assertEqual(square_root(9), 3)
 
 # Do not touch this
 if __name__ == "__main__":
