@@ -1,7 +1,3 @@
-# https://github.com/sukiliuuu/lab11-SL-RWW/
-# My partner never repled to my attempts at communication so I completed the parts I could
-# Partner 1: Suki Liu
-# Partner 2: Ramey Webb Webb
 import unittest
 from calculator import *
 
@@ -15,13 +11,15 @@ class TestCalculator(unittest.TestCase):
     # ##########################
 
     ######## Partner 1
-    # def test_multiply(self): # 3 assertions
-    #     fill in code
+    def test_multiply(self): # 3 assertions
+        self.assertEqual(multiply(0, 1), 0)
+        self.assertEqual(multiply(1, 2), 2)
+        self.assertEqual(multiply(2, 3), 6)
 
-    # def test_divide(self): # 3 assertions
-    #     fill in code
-    # ##########################
-
+    def test_divide(self): # 3 assertions
+        self.assertEqual(divide(1, 0), 0)
+        self.assertEqual(divide(1, 2), 2)
+        self.assertEqual(divide(2, 6), 3)
     ######## Partner 2
     # def test_divide_by_zero(self): # 1 assertion
     #     # call division function inside, example:
@@ -38,14 +36,13 @@ class TestCalculator(unittest.TestCase):
     # ##########################
     
     ######## Partner 1
-    # def test_log_invalid_argument(self): # 1 assertion
-    #     # call log function inside, example:
-    #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
-    #     #     logarithm(0, 5)
-    #     fill in code
+    def test_log_invalid_argument(self): # 1 assertion
+    with self.assertRaises(ValueError):
+        logarithm(0, 1)
 
-    # def test_hypotenuse(self): # 3 assertions
-    #     fill in code
+    def test_hypotenuse(self): # 3 assertions
+        assert hypotenuse(3, 4) == 5
+        assert hypotenuse(5, 12) == 13
 
     # def test_sqrt(self): # 3 assertions
     #     # Test for invalid argument, example:
